@@ -12,6 +12,7 @@ contract ContractTest is Test {
 
     function testEpoch() public {
         c.increaseEpoch_wlL();
+        c.increaseEpoch_wlL();
     }
 
     function testCounterArray() public {
@@ -24,9 +25,11 @@ contract ContractTest is Test {
 
     function testCounterMap() public {
         c.countByMap_w_4(5);
+        c.countByMap_w_4(5);
     }
 
     function testCounterEvent() public {
+        c.triggerCounterEvent_956(5);
         c.triggerCounterEvent_956(5);
     }
 }
